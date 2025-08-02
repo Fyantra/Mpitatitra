@@ -10,30 +10,45 @@ import Footer from './components/Footer';
 
 function App() {
   const [currentPage, setCurrentPage] = useState('accueil');
+  const [isTransitioning, setIsTransitioning] = useState(false);
+
+  const handlePageChange = (page: string) => {
+    if (page !== currentPage) {
+      setIsTransitioning(true);
+      setTimeout(() => {
+        setCurrentPage(page);
+        setIsTransitioning(false);
+      }, 150);
+    }
+  };
 
   const renderPage = () => {
     switch (currentPage) {
       case 'accueil':
-        return <div className="animate-fade-in"><HomePage /></div>;
+        return <HomePage />;
       case 'qui-sommes-nous':
-        return <div className="animate-fade-in"><AboutPage /></div>;
+        return <AboutPage />;
       case 'transport-marchandises':
-        return <div className="animate-fade-in"><FreightTransportPage /></div>;
+        return <FreightTransportPage />;
       case 'transport-public':
-        return <div className="animate-fade-in"><PublicTransportPage /></div>;
+        return <PublicTransportPage />;
       case 'service-manutention':
-        return <div className="animate-fade-in"><HandlingPackagingPage /></div>;
+        return <HandlingPackagingPage />;
       default:
-        return <div className="animate-fade-in"><HomePage /></div>;
+        return <HomePage />;
     }
   };
 
   return (
     <div className="min-h-screen bg-white">
       <Header />
-      <Navigation currentPage={currentPage} setCurrentPage={setCurrentPage} />
-      <main className="transition-all duration-500 ease-in-out">
-        {renderPage()}
+      <Navigation currentPage={currentPage} setCurrentPage={handlePageChange} />
+      <main className={`transition-all duration-300 ease-in-out ${
+        isTransitioning ? 'opacity-0 transform translate-y-4' : 'opacity-100 transform translate-y-0'
+      }`}>
+        <div className="animate-slide-in">
+          {renderPage()}
+        </div>
       </main>
       <Footer />
     </div>

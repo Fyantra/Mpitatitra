@@ -17,6 +17,11 @@ const Navigation: React.FC<NavigationProps> = ({ currentPage, setCurrentPage }) 
     { id: 'service-manutention', label: 'SERVICE DE MANUTENTION ET D\'EMBALLAGE' },
   ];
 
+  const getCurrentPageTitle = () => {
+    const currentItem = menuItems.find(item => item.id === currentPage);
+    return currentItem ? currentItem.label : 'ACCUEIL';
+  };
+
   const handleMenuClick = (pageId: string) => {
     setCurrentPage(pageId);
     setIsMenuOpen(false);
@@ -26,12 +31,9 @@ const Navigation: React.FC<NavigationProps> = ({ currentPage, setCurrentPage }) 
     <nav className="bg-white shadow-lg sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex justify-between lg:justify-center items-center">
-          {/* Logo mobile */}
+          {/* Titre de page mobile */}
           <div className="lg:hidden flex items-center space-x-2">
-            <div className="w-8 h-8 bg-black rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-sm">M</span>
-            </div>
-            <span className="font-bold text-lg">MPITATITRA</span>
+            <span className="font-bold text-lg text-gray-800">{getCurrentPageTitle()}</span>
           </div>
 
           {/* Desktop Menu */}
