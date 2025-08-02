@@ -14,17 +14,17 @@ function App() {
   const renderPage = () => {
     switch (currentPage) {
       case 'accueil':
-        return <HomePage />;
+        return <div className="animate-fade-in"><HomePage /></div>;
       case 'qui-sommes-nous':
-        return <AboutPage />;
+        return <div className="animate-fade-in"><AboutPage /></div>;
       case 'transport-marchandises':
-        return <FreightTransportPage />;
+        return <div className="animate-fade-in"><FreightTransportPage /></div>;
       case 'transport-public':
-        return <PublicTransportPage />;
+        return <div className="animate-fade-in"><PublicTransportPage /></div>;
       case 'service-manutention':
-        return <HandlingPackagingPage />;
+        return <div className="animate-fade-in"><HandlingPackagingPage /></div>;
       default:
-        return <HomePage />;
+        return <div className="animate-fade-in"><HomePage /></div>;
     }
   };
 
