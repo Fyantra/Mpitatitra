@@ -111,13 +111,21 @@ const HomePage = () => {
       <section className="py-20 bg-gray-50">
   <div className="max-w-7xl mx-auto px-6">
     <div className="text-center mb-16">
+      <div className="mb-12">
+        <p className="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
+          MPITATITRA est une entreprise spécialisée dans le transport routier et la logistique à Madagascar. 
+          Nous proposons des solutions fiables, rapides et adaptées pour répondre aux besoins des particuliers 
+          et des professionnels, allant du déménagement à la livraison de marchandises lourdes, avec un engagement 
+          fort pour la ponctualité et la sécurité.
+        </p>
+      </div>
       <h2 className="text-4xl font-bold text-gray-800 mb-4">Nos Services</h2>
       <p className="text-xl text-gray-600">
         Solutions complètes pour tous vos besoins de transport
       </p>
     </div>
 
-    <div className="grid md:grid-cols-2 gap-8 justify-center">
+    <div className="grid md:grid-cols-1 gap-8 justify-center max-w-2xl mx-auto">
       <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:-translate-y-2">
         <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-6 mx-auto">
           <Truck className="w-8 h-8" style={{ color: 'rgb(223, 0, 28)' }} />
@@ -126,28 +134,22 @@ const HomePage = () => {
         <p className="text-gray-600 text-center mb-6">
           Déménagement, expédition, transbordement avec une flotte adaptée de 2 à 32 tonnes.
         </p>
-        <ul className="space-y-2 text-gray-600">
-          <li>• Déménagement entrepôt/particulier</li>
-          <li>• Expédition sécurisée</li>
-          <li>• Transbordement</li>
-          <li>• Véhicules spécialisés disponibles</li>
-        </ul>
-      </div>
-
-      <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:-translate-y-2">
-        <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-6 mx-auto">
-          <Users className="w-8 h-8" style={{ color: 'rgb(223, 0, 28)' }} />
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <button 
+            onClick={() => window.location.href = '#transport-marchandises-services'}
+            className="px-6 py-3 bg-red-600 text-white font-bold rounded-lg hover:bg-red-700 transition-colors"
+            style={{ backgroundColor: 'rgb(223, 0, 28)' }}
+          >
+            Nos Services
+          </button>
+          <button 
+            onClick={() => window.location.href = '#transport-marchandises-vehicules'}
+            className="px-6 py-3 border-2 border-red-600 text-red-600 font-bold rounded-lg hover:bg-red-600 hover:text-white transition-colors"
+            style={{ borderColor: 'rgb(223, 0, 28)', color: 'rgb(223, 0, 28)' }}
+          >
+            Véhicules Disponibles
+          </button>
         </div>
-        <h3 className="text-2xl font-bold text-center mb-4">Transport Public</h3>
-        <p className="text-gray-600 text-center mb-6">
-          Services VIP pour événements, excursions touristiques et déplacements officiels.
-        </p>
-        <ul className="space-y-2 text-gray-600">
-          <li>• Navettes VIP événements</li>
-          <li>• Excursions touristiques premium</li>
-          <li>• Transfert aéroport</li>
-          <li>• Location avec chauffeur privé</li>
-        </ul>
       </div>
     </div>
   </div>

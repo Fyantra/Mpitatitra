@@ -88,36 +88,6 @@ const FreightTransportPage = () => {
       </section>
 
       {/* Vehicles Section */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">Véhicules Disponibles</h2>
-            <p className="text-lg text-gray-600">Flotte diversifiée de 2 à 32 tonnes pour tous vos besoins</p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {vehicles.map((vehicle, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                <div className="flex items-center justify-between mb-4">
-                  <div className="flex items-center space-x-3">
-                    <Truck className="w-8 h-8" style={{ color: 'rgb(223, 0, 28)' }} />
-                    <div>
-                      <h3 className="font-bold text-lg">{vehicle.capacity}</h3>
-                      <p className="text-sm text-gray-600">{vehicle.type}</p>
-                    </div>
-                  </div>
-                  <div className="text-right">
-                    <span className="text-2xl font-bold" style={{ color: 'rgb(223, 0, 28)' }}>
-                      {vehicle.capacity}
-                    </span>
-                  </div>
-                </div>
-                <p className="text-gray-600 text-sm">{vehicle.usage}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Process Section */}
       <section className="py-16 bg-white">
@@ -164,23 +134,6 @@ const FreightTransportPage = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gray-800 text-white">
-        <div className="max-w-7xl mx-auto px-6 text-center">
-          <h2 className="text-3xl font-bold mb-4">Besoin d'un Transport de Marchandises ?</h2>
-          <p className="text-xl mb-8">Contactez-nous pour un devis personnalisé et gratuit</p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="px-8 py-3 bg-white text-gray-800 font-bold rounded-lg hover:bg-gray-100 transition-colors">
-              Demander un Devis
-            </button>
-            <button 
-              className="px-8 py-3 border-2 border-white text-white font-bold rounded-lg hover:bg-white hover:text-gray-800 transition-colors"
-              style={{ borderColor: 'rgb(223, 0, 28)', color: 'rgb(223, 0, 28)' }}
-            >
-              Nous Contacter
-            </button>
-          </div>
-        </div>
-      </section>
     </div>
   );
 };

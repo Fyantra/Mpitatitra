@@ -12,8 +12,22 @@ const Navigation: React.FC<NavigationProps> = ({ currentPage, setCurrentPage }) 
   const menuItems = [
     { id: 'accueil', label: 'ACCUEIL' },
     { id: 'qui-sommes-nous', label: 'QUI SOMMES-NOUS' },
-    { id: 'transport-marchandises', label: 'TRANSPORT MARCHANDISES' },
-    { id: 'transport-public', label: 'TRANSPORT PUBLIC' }
+    { 
+      id: 'transport-marchandises', 
+      label: 'TRANSPORT MARCHANDISES',
+      submenu: [
+        { id: 'transport-marchandises-services', label: 'NOS SERVICES' },
+        { id: 'transport-marchandises-vehicules', label: 'VÉHICULES DISPONIBLES' }
+      ]
+    },
+    { 
+      id: 'transport-public', 
+      label: 'TRANSPORT PUBLIC',
+      submenu: [
+        { id: 'transport-public-services', label: 'NOS SERVICES' },
+        { id: 'transport-public-vehicules', label: 'VÉHICULES DISPONIBLES' }
+      ]
+    }
   ];
 
   const getCurrentPageTitle = () => {

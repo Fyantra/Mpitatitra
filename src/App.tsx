@@ -4,8 +4,9 @@ import Navigation from './components/Navigation';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import FreightTransportPage from './pages/FreightTransportPage';
+import FreightTransportVehiclesPage from './pages/FreightTransportVehiclesPage';
 import PublicTransportPage from './pages/PublicTransportPage';
-import HandlingPackagingPage from './pages/HandlingPackagingPage';
+import PublicTransportVehiclesPage from './pages/PublicTransportVehiclesPage';
 import Footer from './components/Footer';
 
 function App() {
@@ -28,12 +29,14 @@ function App() {
         return <HomePage />;
       case 'qui-sommes-nous':
         return <AboutPage />;
-      case 'transport-marchandises':
+      case 'transport-marchandises-services':
         return <FreightTransportPage />;
-      case 'transport-public':
+      case 'transport-marchandises-vehicules':
+        return <FreightTransportVehiclesPage />;
+      case 'transport-public-services':
         return <PublicTransportPage />;
-      case 'service-manutention':
-        return <HandlingPackagingPage />;
+      case 'transport-public-vehicules':
+        return <PublicTransportVehiclesPage />;
       default:
         return <HomePage />;
     }
