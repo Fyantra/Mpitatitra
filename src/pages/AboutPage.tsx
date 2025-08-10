@@ -19,13 +19,14 @@ const AboutPage = () => {
       {/* Main Activity */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="max-w-4xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
               <h2 className="text-3xl font-bold text-gray-800 mb-6">Activité Principale</h2>
               <p className="text-lg text-gray-600 leading-relaxed">
                 Notre cœur de métier, c'est le transport public et le transport de marchandises par voie routière, 
                 ainsi que la gestion logistique pour les entreprises et les particuliers.
               </p>
-              <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="mt-8 grid grid-cols-2 gap-6">
                 <div className="text-center p-6 bg-gray-50 rounded-lg">
                   <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-4 mx-auto">
                     <Target className="w-8 h-8" style={{ color: 'rgb(223, 0, 28)' }} />
@@ -39,21 +40,60 @@ const AboutPage = () => {
                   <h3 className="font-bold">Transport Marchandises</h3>
                 </div>
               </div>
+            </div>
+            <div className="relative">
+              <img 
+                src="https://images.pexels.com/photos/1906794/pexels-photo-1906794.jpeg?auto=compress&cs=tinysrgb&w=800" 
+                alt="Transport Madagascar" 
+                className="rounded-lg shadow-xl"
+              />
+            </div>
           </div>
         </div>
       </section>
 
       {/* Vision */}
-
-      {/* Objectif */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">Objectif</h2>
-            <p className="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
-              Développer et faciliter le transport à Madagascar en offrant des solutions modernes, 
-              économiques et sécurisées pour particuliers et entreprises.
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">Vision du Projet</h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              Notre mission est de rendre le transport plus fiable, rapide et accessible, partout à Madagascar.
             </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="bg-white p-6 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow">
+              <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-4 mx-auto">
+                <Eye className="w-8 h-8" style={{ color: 'rgb(223, 0, 28)' }} />
+              </div>
+              <h3 className="font-bold text-lg mb-2">Moderniser</h3>
+              <p className="text-sm text-gray-600">Le service de transport</p>
+            </div>
+            
+            <div className="bg-white p-6 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow">
+              <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-4 mx-auto">
+                <Award className="w-8 h-8" style={{ color: 'rgb(223, 0, 28)' }} />
+              </div>
+              <h3 className="font-bold text-lg mb-2">Image de Marque</h3>
+              <p className="text-sm text-gray-600">Professionnelle et reconnue</p>
+            </div>
+
+            <div className="bg-white p-6 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow">
+              <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-4 mx-auto">
+                <Clock className="w-8 h-8" style={{ color: 'rgb(223, 0, 28)' }} />
+              </div>
+              <h3 className="font-bold text-lg mb-2">Outils Numériques</h3>
+              <p className="text-sm text-gray-600">Commande en ligne, tracking</p>
+            </div>
+
+            <div className="bg-white p-6 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow">
+              <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-4 mx-auto">
+                <Target className="w-8 h-8" style={{ color: 'rgb(223, 0, 28)' }} />
+              </div>
+              <h3 className="font-bold text-lg mb-2">Logistique</h3>
+              <p className="text-sm text-gray-600">Locale intelligente</p>
+            </div>
           </div>
         </div>
       </section>
@@ -70,6 +110,7 @@ const AboutPage = () => {
               />
             </div>
             <div>
+              <h2 className="text-3xl font-bold text-gray-800 mb-6">Public Cible</h2>
               <p className="text-lg text-gray-600 leading-relaxed mb-8">
                 Nous travaillons avec des entreprises locales, des commerçants, des agriculteurs, 
                 mais aussi des particuliers qui ont besoin de transporter leurs biens en toute sécurité.
@@ -157,7 +198,6 @@ const AboutPage = () => {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-6">
             <div className="bg-gray-50 p-6 rounded-lg text-center">
               <MapPin className="w-8 h-8 mx-auto mb-3" style={{ color: 'rgb(223, 0, 28)' }} />
               <h3 className="font-bold">Antananarivo</h3>
@@ -177,16 +217,6 @@ const AboutPage = () => {
               <MapPin className="w-8 h-8 mx-auto mb-3" style={{ color: 'rgb(223, 0, 28)' }} />
               <h3 className="font-bold">Toliara</h3>
               <p className="text-sm text-gray-600">Sud-ouest</p>
-            </div>
-            <div className="bg-gray-50 p-6 rounded-lg text-center">
-              <MapPin className="w-8 h-8 mx-auto mb-3" style={{ color: 'rgb(223, 0, 28)' }} />
-              <h3 className="font-bold">Majunga</h3>
-              <p className="text-sm text-gray-600">Côte ouest</p>
-            </div>
-            <div className="bg-gray-50 p-6 rounded-lg text-center">
-              <MapPin className="w-8 h-8 mx-auto mb-3" style={{ color: 'rgb(223, 0, 28)' }} />
-              <h3 className="font-bold">Nosy Be Hell Ville</h3>
-              <p className="text-sm text-gray-600">Île touristique</p>
             </div>
           </div>
         </div>
