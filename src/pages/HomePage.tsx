@@ -109,63 +109,50 @@ const HomePage = () => {
 
       {/* Services Overview */}
       <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-800 mb-4">Nos Services</h2>
-            <p className="text-xl text-gray-600">Solutions complètes pour tous vos besoins de transport</p>
-          </div>
+  <div className="max-w-7xl mx-auto px-6">
+    <div className="text-center mb-16">
+      <h2 className="text-4xl font-bold text-gray-800 mb-4">Nos Services</h2>
+      <p className="text-xl text-gray-600">
+        Solutions complètes pour tous vos besoins de transport
+      </p>
+    </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:-translate-y-2">
-              <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-6 mx-auto">
-                <Truck className="w-8 h-8" style={{ color: 'rgb(223, 0, 28)' }} />
-              </div>
-              <h3 className="text-2xl font-bold text-center mb-4">Transport Marchandises</h3>
-              <p className="text-gray-600 text-center mb-6">
-                Déménagement, expédition, transbordement avec une flotte adaptée de 2 à 32 tonnes.
-              </p>
-              <ul className="space-y-2 text-gray-600">
-                <li>• Déménagement entrepôt/particulier</li>
-                <li>• Expédition sécurisée</li>
-                <li>• Transbordement</li>
-                <li>• Véhicules spécialisés disponibles</li>
-              </ul>
-            </div>
-
-            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:-translate-y-2">
-              <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-6 mx-auto">
-                <Users className="w-8 h-8" style={{ color: 'rgb(223, 0, 28)' }} />
-              </div>
-              <h3 className="text-2xl font-bold text-center mb-4">Transport Public</h3>
-              <p className="text-gray-600 text-center mb-6">
-                Services VIP pour événements, excursions touristiques et déplacements officiels.
-              </p>
-              <ul className="space-y-2 text-gray-600">
-                <li>• Navettes VIP événements</li>
-                <li>• Excursions touristiques premium</li>
-                <li>• Transfert aéroport</li>
-                <li>• Location avec chauffeur privé</li>
-              </ul>
-            </div>
-
-            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:-translate-y-2">
-              <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-6 mx-auto">
-                <Package className="w-8 h-8" style={{ color: 'rgb(223, 0, 28)' }} />
-              </div>
-              <h3 className="text-2xl font-bold text-center mb-4">Manutention & Emballage</h3>
-              <p className="text-gray-600 text-center mb-6">
-                Services complets de manutention et d'emballage professionnel pour vos marchandises.
-              </p>
-              <ul className="space-y-2 text-gray-600">
-                <li>• Manutention spécialisée</li>
-                <li>• Emballage sécurisé</li>
-                <li>• Équipement moderne</li>
-                <li>• Personnel qualifié</li>
-              </ul>
-            </div>
-          </div>
+    <div className="grid md:grid-cols-2 gap-8 justify-center">
+      <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:-translate-y-2">
+        <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-6 mx-auto">
+          <Truck className="w-8 h-8" style={{ color: 'rgb(223, 0, 28)' }} />
         </div>
-      </section>
+        <h3 className="text-2xl font-bold text-center mb-4">Transport Marchandises</h3>
+        <p className="text-gray-600 text-center mb-6">
+          Déménagement, expédition, transbordement avec une flotte adaptée de 2 à 32 tonnes.
+        </p>
+        <ul className="space-y-2 text-gray-600">
+          <li>• Déménagement entrepôt/particulier</li>
+          <li>• Expédition sécurisée</li>
+          <li>• Transbordement</li>
+          <li>• Véhicules spécialisés disponibles</li>
+        </ul>
+      </div>
+
+      <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:-translate-y-2">
+        <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-6 mx-auto">
+          <Users className="w-8 h-8" style={{ color: 'rgb(223, 0, 28)' }} />
+        </div>
+        <h3 className="text-2xl font-bold text-center mb-4">Transport Public</h3>
+        <p className="text-gray-600 text-center mb-6">
+          Services VIP pour événements, excursions touristiques et déplacements officiels.
+        </p>
+        <ul className="space-y-2 text-gray-600">
+          <li>• Navettes VIP événements</li>
+          <li>• Excursions touristiques premium</li>
+          <li>• Transfert aéroport</li>
+          <li>• Location avec chauffeur privé</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* Why Choose Us */}
       <section className="py-20 bg-white">

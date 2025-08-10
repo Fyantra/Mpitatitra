@@ -13,8 +13,7 @@ const Navigation: React.FC<NavigationProps> = ({ currentPage, setCurrentPage }) 
     { id: 'accueil', label: 'ACCUEIL' },
     { id: 'qui-sommes-nous', label: 'QUI SOMMES-NOUS' },
     { id: 'transport-marchandises', label: 'TRANSPORT MARCHANDISES' },
-    { id: 'transport-public', label: 'TRANSPORT PUBLIC' },
-    { id: 'service-manutention', label: 'SERVICE DE MANUTENTION ET D\'EMBALLAGE' },
+    { id: 'transport-public', label: 'TRANSPORT PUBLIC' }
   ];
 
   const getCurrentPageTitle = () => {

@@ -22,7 +22,7 @@ const Header = () => {
             <Phone className="w-5 h-5 text-red-600" style={{ color: 'rgb(223, 0, 28)' }} />
             <div>
               <p className="text-sm text-gray-300">Téléphone</p>
-              <p className="font-medium">+261 20 XX XXX XX</p>
+              <p className="font-medium">0 34 XX XXX XX/032 XX XXX XX</p>
             </div>
           </div>
           <div className="flex items-center space-x-2">
