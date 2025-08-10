@@ -1,7 +1,11 @@
-import React, { useState, useEffect } from 'react';
-import { ChevronLeft, ChevronRight, Truck, Users, Package } from 'lucide-react';
+import { useState, useEffect } from 'react';
+import { ChevronLeft, ChevronRight, Truck, Users } from 'lucide-react';
 
-const HomePage = () => {
+interface HomePageProps {
+  onNavigate?: (page: string) => void;
+}
+
+const HomePage = ({ onNavigate }: HomePageProps = {}) => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const slides = [
@@ -107,52 +111,106 @@ const HomePage = () => {
         </div>
       </section>
 
+      {/* Presentation Section */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-800 mb-6">Qui sommes-nous ?</h2>
+            <div className="max-w-4xl mx-auto">
+              <p className="text-xl text-gray-600 leading-relaxed mb-6">
+                <strong style={{ color: 'rgb(223, 0, 28)' }}>MPITATITRA</strong>, une entreprise spécialisée dans le transport routier et la logistique à Madagascar.
+              </p>
+              <p className="text-lg text-gray-600 leading-relaxed mb-4">
+                Depuis notre création, nous nous engageons à offrir des solutions de transport fiables, sécurisées et adaptées aux besoins spécifiques de nos clients. Notre expertise couvre l'ensemble du territoire malgache, des zones urbaines aux régions les plus reculées.
+              </p>
+              <p className="text-lg text-gray-600 leading-relaxed mb-4">
+                Que vous soyez une entreprise, un commerçant ou un particulier, nous mettons à votre disposition notre flotte moderne et notre équipe expérimentée pour garantir le transport de vos biens et personnes dans les meilleures conditions.
+              </p>
+              <p className="text-lg text-gray-600 leading-relaxed">
+                Notre mission est de faciliter vos échanges commerciaux et personnels en vous offrant un service de qualité, ponctuel et professionnel, contribuant ainsi au développement économique de Madagascar.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Services Overview */}
       <section className="py-20 bg-gray-50">
-  <div className="max-w-7xl mx-auto px-6">
-    <div className="text-center mb-16">
-      <h2 className="text-4xl font-bold text-gray-800 mb-4">Nos Services</h2>
-      <p className="text-xl text-gray-600">
-        Solutions complètes pour tous vos besoins de transport
-      </p>
-    </div>
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-800 mb-4">Nos Services</h2>
+            <p className="text-xl text-gray-600">
+              Solutions complètes pour tous vos besoins de transport
+            </p>
+          </div>
 
-    <div className="grid md:grid-cols-2 gap-8 justify-center">
-      <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:-translate-y-2">
-        <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-6 mx-auto">
-          <Truck className="w-8 h-8" style={{ color: 'rgb(223, 0, 28)' }} />
+          <div className="grid md:grid-cols-2 gap-8 justify-center">
+            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:-translate-y-2">
+              <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-6 mx-auto">
+                <Truck className="w-8 h-8" style={{ color: 'rgb(223, 0, 28)' }} />
+              </div>
+              <h3 className="text-2xl font-bold text-center mb-4">Transport Marchandises</h3>
+              <p className="text-gray-600 text-center mb-6">
+                Déménagement, expédition, transbordement avec une flotte adaptée de 2 à 32 tonnes.
+              </p>
+              <ul className="space-y-2 text-gray-600 mb-6">
+                <li>• Déménagement entrepôt/particulier</li>
+                <li>• Expédition sécurisée</li>
+                <li>• Transbordement</li>
+                <li>• Véhicules spécialisés disponibles</li>
+              </ul>
+              <div className="flex flex-col sm:flex-row gap-3 justify-center">
+                <button 
+                  onClick={() => onNavigate?.('transport-marchandises-services')}
+                  className="px-6 py-2 bg-white border-2 text-gray-800 font-medium rounded-lg hover:bg-gray-50 transition-colors"
+                  style={{ borderColor: 'rgb(223, 0, 28)', color: 'rgb(223, 0, 28)' }}
+                >
+                  Nos Services
+                </button>
+                <button 
+                  onClick={() => onNavigate?.('transport-marchandises-vehicules')}
+                  className="px-6 py-2 text-white font-medium rounded-lg hover:opacity-90 transition-opacity"
+                  style={{ backgroundColor: 'rgb(223, 0, 28)' }}
+                >
+                  Véhicules Disponibles
+                </button>
+              </div>
+            </div>
+
+            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:-translate-y-2">
+              <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-6 mx-auto">
+                <Users className="w-8 h-8" style={{ color: 'rgb(223, 0, 28)' }} />
+              </div>
+              <h3 className="text-2xl font-bold text-center mb-4">Transport Public</h3>
+              <p className="text-gray-600 text-center mb-6">
+                Services VIP pour événements, excursions touristiques et déplacements officiels.
+              </p>
+              <ul className="space-y-2 text-gray-600 mb-6">
+                <li>• Navettes VIP événements</li>
+                <li>• Excursions touristiques premium</li>
+                <li>• Transfert aéroport</li>
+                <li>• Location avec chauffeur privé</li>
+              </ul>
+              <div className="flex flex-col sm:flex-row gap-3 justify-center">
+                <button 
+                  onClick={() => onNavigate?.('transport-public-services')}
+                  className="px-6 py-2 bg-white border-2 text-gray-800 font-medium rounded-lg hover:bg-gray-50 transition-colors"
+                  style={{ borderColor: 'rgb(223, 0, 28)', color: 'rgb(223, 0, 28)' }}
+                >
+                  Nos Services
+                </button>
+                <button 
+                  onClick={() => onNavigate?.('transport-public-vehicules')}
+                  className="px-6 py-2 text-white font-medium rounded-lg hover:opacity-90 transition-opacity"
+                  style={{ backgroundColor: 'rgb(223, 0, 28)' }}
+                >
+                  Véhicules Disponibles
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
-        <h3 className="text-2xl font-bold text-center mb-4">Transport Marchandises</h3>
-        <p className="text-gray-600 text-center mb-6">
-          Déménagement, expédition, transbordement avec une flotte adaptée de 2 à 32 tonnes.
-        </p>
-        <ul className="space-y-2 text-gray-600">
-          <li>• Déménagement entrepôt/particulier</li>
-          <li>• Expédition sécurisée</li>
-          <li>• Transbordement</li>
-          <li>• Véhicules spécialisés disponibles</li>
-        </ul>
-      </div>
-
-      <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:-translate-y-2">
-        <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-6 mx-auto">
-          <Users className="w-8 h-8" style={{ color: 'rgb(223, 0, 28)' }} />
-        </div>
-        <h3 className="text-2xl font-bold text-center mb-4">Transport Public</h3>
-        <p className="text-gray-600 text-center mb-6">
-          Services VIP pour événements, excursions touristiques et déplacements officiels.
-        </p>
-        <ul className="space-y-2 text-gray-600">
-          <li>• Navettes VIP événements</li>
-          <li>• Excursions touristiques premium</li>
-          <li>• Transfert aéroport</li>
-          <li>• Location avec chauffeur privé</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
+      </section>
 
       {/* Why Choose Us */}
       <section className="py-20 bg-white">

@@ -1,5 +1,4 @@
-import React from 'react';
-import { Target, Eye, Users, MapPin, Award, Clock } from 'lucide-react';
+import { Target, MapPin, Award, Clock } from 'lucide-react';
 
 const AboutPage = () => {
   return (
@@ -19,80 +18,61 @@ const AboutPage = () => {
       {/* Main Activity */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-3xl font-bold text-gray-800 mb-6">Activité Principale</h2>
-              <p className="text-lg text-gray-600 leading-relaxed">
-                Notre cœur de métier, c'est le transport public et le transport de marchandises par voie routière, 
-                ainsi que la gestion logistique pour les entreprises et les particuliers.
-              </p>
-              <div className="mt-8 grid grid-cols-2 gap-6">
-                <div className="text-center p-6 bg-gray-50 rounded-lg">
-                  <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-4 mx-auto">
-                    <Target className="w-8 h-8" style={{ color: 'rgb(223, 0, 28)' }} />
-                  </div>
-                  <h3 className="font-bold">Transport Public</h3>
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center">Activité Principale</h2>
+            <p className="text-lg text-gray-600 leading-relaxed text-center mb-8">
+              Notre cœur de métier, c'est le transport public et le transport de marchandises par voie routière, 
+              ainsi que la gestion logistique pour les entreprises et les particuliers.
+            </p>
+            <div className="grid grid-cols-2 gap-6 max-w-md mx-auto">
+              <div className="text-center p-6 bg-gray-50 rounded-lg">
+                <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-4 mx-auto">
+                  <Target className="w-8 h-8" style={{ color: 'rgb(223, 0, 28)' }} />
                 </div>
-                <div className="text-center p-6 bg-gray-50 rounded-lg">
-                  <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-4 mx-auto">
-                    <Target className="w-8 h-8" style={{ color: 'rgb(223, 0, 28)' }} />
-                  </div>
-                  <h3 className="font-bold">Transport Marchandises</h3>
-                </div>
+                <h3 className="font-bold">Transport Public</h3>
               </div>
-            </div>
-            <div className="relative">
-              <img 
-                src="https://images.pexels.com/photos/1906794/pexels-photo-1906794.jpeg?auto=compress&cs=tinysrgb&w=800" 
-                alt="Transport Madagascar" 
-                className="rounded-lg shadow-xl"
-              />
+              <div className="text-center p-6 bg-gray-50 rounded-lg">
+                <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-4 mx-auto">
+                  <Target className="w-8 h-8" style={{ color: 'rgb(223, 0, 28)' }} />
+                </div>
+                <h3 className="font-bold">Transport Marchandises</h3>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Vision */}
+      {/* Objectifs */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">Vision du Projet</h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Notre mission est de rendre le transport plus fiable, rapide et accessible, partout à Madagascar.
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">Nos Objectifs</h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-8">
+              Notre mission est de développer et faciliter le transport à Madagascar en offrant des solutions innovantes et accessibles.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="bg-white p-6 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow">
-              <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-4 mx-auto">
-                <Eye className="w-8 h-8" style={{ color: 'rgb(223, 0, 28)' }} />
-              </div>
-              <h3 className="font-bold text-lg mb-2">Moderniser</h3>
-              <p className="text-sm text-gray-600">Le service de transport</p>
-            </div>
-            
-            <div className="bg-white p-6 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow">
-              <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-4 mx-auto">
-                <Award className="w-8 h-8" style={{ color: 'rgb(223, 0, 28)' }} />
-              </div>
-              <h3 className="font-bold text-lg mb-2">Image de Marque</h3>
-              <p className="text-sm text-gray-600">Professionnelle et reconnue</p>
-            </div>
-
-            <div className="bg-white p-6 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow">
-              <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-4 mx-auto">
-                <Clock className="w-8 h-8" style={{ color: 'rgb(223, 0, 28)' }} />
-              </div>
-              <h3 className="font-bold text-lg mb-2">Outils Numériques</h3>
-              <p className="text-sm text-gray-600">Commande en ligne, tracking</p>
-            </div>
-
-            <div className="bg-white p-6 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow">
-              <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-4 mx-auto">
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <div className="bg-white p-8 rounded-xl shadow-lg">
+              <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-6 mx-auto">
                 <Target className="w-8 h-8" style={{ color: 'rgb(223, 0, 28)' }} />
               </div>
-              <h3 className="font-bold text-lg mb-2">Logistique</h3>
-              <p className="text-sm text-gray-600">Locale intelligente</p>
+              <h3 className="font-bold text-xl mb-4 text-center">Développer le Transport</h3>
+              <p className="text-gray-600 text-center leading-relaxed">
+                Moderniser et étendre les services de transport routier à Madagascar pour répondre aux besoins croissants 
+                des entreprises et des particuliers dans toutes les régions.
+              </p>
+            </div>
+
+            <div className="bg-white p-8 rounded-xl shadow-lg">
+              <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-6 mx-auto">
+                <Award className="w-8 h-8" style={{ color: 'rgb(223, 0, 28)' }} />
+              </div>
+              <h3 className="font-bold text-xl mb-4 text-center">Faciliter les Échanges</h3>
+              <p className="text-gray-600 text-center leading-relaxed">
+                Simplifier et optimiser les déplacements et le transport de marchandises pour stimuler l'économie locale 
+                et améliorer la qualité de vie des malgaches.
+              </p>
             </div>
           </div>
         </div>
@@ -101,45 +81,35 @@ const AboutPage = () => {
       {/* Target Audience */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="relative">
-              <img 
-                src="https://images.pexels.com/photos/128867/coins-currency-investment-insurance-128867.jpeg?auto=compress&cs=tinysrgb&w=800" 
-                alt="Clients Madagascar" 
-                className="rounded-lg shadow-xl"
-              />
-            </div>
-            <div>
-              <h2 className="text-3xl font-bold text-gray-800 mb-6">Public Cible</h2>
-              <p className="text-lg text-gray-600 leading-relaxed mb-8">
-                Nous travaillons avec des entreprises locales, des commerçants, des agriculteurs, 
-                mais aussi des particuliers qui ont besoin de transporter leurs biens en toute sécurité.
-              </p>
-              <div className="space-y-4">
-                <div className="flex items-center space-x-3">
-                  <div className="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center">
-                    <span className="text-sm font-bold" style={{ color: 'rgb(223, 0, 28)' }}>✓</span>
-                  </div>
-                  <span className="font-medium">Entreprises locales</span>
+          <div className="max-w-4xl mx-auto">
+            <p className="text-lg text-gray-600 leading-relaxed mb-8 text-center">
+              Nous travaillons avec des entreprises locales, des commerçants, des agriculteurs, 
+              mais aussi des particuliers qui ont besoin de transporter leurs biens en toute sécurité.
+            </p>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="flex items-center space-x-3 p-4 bg-gray-50 rounded-lg">
+                <div className="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center">
+                  <span className="text-sm font-bold" style={{ color: 'rgb(223, 0, 28)' }}>✓</span>
                 </div>
-                <div className="flex items-center space-x-3">
-                  <div className="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center">
-                    <span className="text-sm font-bold" style={{ color: 'rgb(223, 0, 28)' }}>✓</span>
-                  </div>
-                  <span className="font-medium">Commerçants</span>
+                <span className="font-medium">Entreprises locales</span>
+              </div>
+              <div className="flex items-center space-x-3 p-4 bg-gray-50 rounded-lg">
+                <div className="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center">
+                  <span className="text-sm font-bold" style={{ color: 'rgb(223, 0, 28)' }}>✓</span>
                 </div>
-                <div className="flex items-center space-x-3">
-                  <div className="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center">
-                    <span className="text-sm font-bold" style={{ color: 'rgb(223, 0, 28)' }}>✓</span>
-                  </div>
-                  <span className="font-medium">Agriculteurs</span>
+                <span className="font-medium">Commerçants</span>
+              </div>
+              <div className="flex items-center space-x-3 p-4 bg-gray-50 rounded-lg">
+                <div className="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center">
+                  <span className="text-sm font-bold" style={{ color: 'rgb(223, 0, 28)' }}>✓</span>
                 </div>
-                <div className="flex items-center space-x-3">
-                  <div className="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center">
-                    <span className="text-sm font-bold" style={{ color: 'rgb(223, 0, 28)' }}>✓</span>
-                  </div>
-                  <span className="font-medium">Particuliers</span>
+                <span className="font-medium">Agriculteurs</span>
+              </div>
+              <div className="flex items-center space-x-3 p-4 bg-gray-50 rounded-lg">
+                <div className="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center">
+                  <span className="text-sm font-bold" style={{ color: 'rgb(223, 0, 28)' }}>✓</span>
                 </div>
+                <span className="font-medium">Particuliers</span>
               </div>
             </div>
           </div>
@@ -193,11 +163,11 @@ const AboutPage = () => {
             <h2 className="text-3xl font-bold text-gray-800 mb-4">Zone d'Intervention</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               Nos services couvrent tout Madagascar, notamment les grands axes comme 
-              Antananarivo – Toamasina – Fianarantsoa – Toliara.
+              Antananarivo – Toamasina – Fianarantsoa – Toliara – Majunga – Nosy Be Hell Ville.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="bg-gray-50 p-6 rounded-lg text-center">
               <MapPin className="w-8 h-8 mx-auto mb-3" style={{ color: 'rgb(223, 0, 28)' }} />
               <h3 className="font-bold">Antananarivo</h3>
@@ -217,6 +187,16 @@ const AboutPage = () => {
               <MapPin className="w-8 h-8 mx-auto mb-3" style={{ color: 'rgb(223, 0, 28)' }} />
               <h3 className="font-bold">Toliara</h3>
               <p className="text-sm text-gray-600">Sud-ouest</p>
+            </div>
+            <div className="bg-gray-50 p-6 rounded-lg text-center">
+              <MapPin className="w-8 h-8 mx-auto mb-3" style={{ color: 'rgb(223, 0, 28)' }} />
+              <h3 className="font-bold">Majunga</h3>
+              <p className="text-sm text-gray-600">Côte ouest</p>
+            </div>
+            <div className="bg-gray-50 p-6 rounded-lg text-center">
+              <MapPin className="w-8 h-8 mx-auto mb-3" style={{ color: 'rgb(223, 0, 28)' }} />
+              <h3 className="font-bold">Nosy Be Hell Ville</h3>
+              <p className="text-sm text-gray-600">Île touristique</p>
             </div>
           </div>
         </div>

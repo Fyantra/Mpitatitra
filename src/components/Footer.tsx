@@ -1,5 +1,4 @@
-import React from 'react';
-import { Phone, Mail, MapPin, Facebook, Twitter, Linkedin } from 'lucide-react';
+import { Phone, Mail, MapPin, Facebook, Instagram, Linkedin } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -17,23 +16,13 @@ const Footer = () => {
                 <p className="text-sm text-gray-300">Transport & Logistique</p>
               </div>
             </div>
-            <p className="text-gray-300 text-sm leading-relaxed">
-              Entreprise spécialisée dans le transport routier et la logistique à Madagascar. 
-              Nous offrons des solutions complètes et professionnelles pour tous vos besoins de transport.
+            <p className="text-gray-300 text-sm leading-relaxed font-medium" style={{ color: 'rgb(223, 0, 28)' }}>
+              "Votre destination, notre mission"
             </p>
           </div>
 
-          {/* Services */}
-          <div>
-            <h4 className="text-lg font-bold mb-4" style={{ color: 'rgb(223, 0, 28)' }}>Nos Services</h4>
-            <ul className="space-y-2 text-sm">
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Transport Marchandises</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Transport Public VIP</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Manutention</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Emballage</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Logistique</a></li>
-            </ul>
-          </div>
+          {/* Empty space */}
+          <div></div>
 
           {/* Contact */}
           <div>
@@ -41,7 +30,11 @@ const Footer = () => {
             <div className="space-y-3 text-sm">
               <div className="flex items-center space-x-3">
                 <Phone className="w-4 h-4" style={{ color: 'rgb(223, 0, 28)' }} />
-                <span className="text-gray-300">+261 20 XX XXX XX</span>
+                <div className="flex flex-col space-y-1">
+                  <span className="text-gray-300">+261 20 XX XXX XX</span>
+                  <span className="text-gray-300">+261 32 XX XXX XX</span>
+                  <span className="text-gray-300">+261 34 XX XXX XX</span>
+                </div>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-4 h-4" style={{ color: 'rgb(223, 0, 28)' }} />
@@ -62,7 +55,7 @@ const Footer = () => {
                 <Facebook className="w-5 h-5" />
               </a>
               <a href="#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors">
-                <Twitter className="w-5 h-5" />
+                <Instagram className="w-5 h-5" />
               </a>
               <a href="#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors">
                 <Linkedin className="w-5 h-5" />

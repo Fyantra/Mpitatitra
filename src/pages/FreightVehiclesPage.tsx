@@ -1,0 +1,108 @@
+import { Truck } from 'lucide-react';
+
+const FreightVehiclesPage = () => {
+  const vehicles = [
+    { capacity: '2T', type: 'Camionnette', usage: 'Livraisons urbaines, colis légers' },
+    { capacity: '3.5T', type: 'Camionnette renforcée', usage: 'Transport régional, marchandises moyennes' },
+    { capacity: '5T', type: 'Camion léger', usage: 'Déménagements particuliers, transport local' },
+    { capacity: '8T', type: 'Camion moyen', usage: 'Transport régional, volumes importants' },
+    { capacity: '10T', type: 'Camion moyen+', usage: 'Transport interrégional, marchandises diverses' },
+    { capacity: '12T', type: 'Camion lourd', usage: 'Transport longue distance, gros volumes' },
+    { capacity: '22T', type: 'Semi-remorque', usage: 'Transport industriel, marchandises lourdes' },
+    { capacity: '32T', type: 'Ensemble routier', usage: 'Transport industriel, très gros volumes' }
+  ];
+
+  return (
+    <div className="min-h-screen bg-gray-50">
+      {/* Hero Section */}
+      <section className="relative py-20 bg-gradient-to-r from-black to-gray-800 text-white">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center">
+            <h1 className="text-5xl font-bold mb-6">Transport de Marchandises - Véhicules Disponibles</h1>
+            <p className="text-xl mb-8 max-w-3xl mx-auto">
+              Flotte diversifiée de 2 à 32 tonnes pour tous vos besoins de transport
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Vehicles Section */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">Notre Flotte</h2>
+            <p className="text-lg text-gray-600">Véhicules adaptés à chaque type de transport</p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {vehicles.map((vehicle, index) => (
+              <div key={index} className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow border border-gray-200">
+                <div className="flex items-center justify-between mb-4">
+                  <div className="flex items-center space-x-3">
+                    <Truck className="w-8 h-8" style={{ color: 'rgb(223, 0, 28)' }} />
+                    <div>
+                      <h3 className="font-bold text-lg">Camion {vehicle.capacity}</h3>
+                      <p className="text-sm text-gray-600">{vehicle.type}</p>
+                    </div>
+                  </div>
+                  <div className="text-right">
+                    <span className="text-2xl font-bold" style={{ color: 'rgb(223, 0, 28)' }}>
+                      {vehicle.capacity}
+                    </span>
+                  </div>
+                </div>
+                <p className="text-gray-600 text-sm">{vehicle.usage}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Features Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">Caractéristiques de Notre Flotte</h2>
+            <p className="text-lg text-gray-600">Véhicules modernes et sécurisés</p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="text-center">
+              <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-4 mx-auto">
+                <span className="text-2xl font-bold" style={{ color: 'rgb(223, 0, 28)' }}>✓</span>
+              </div>
+              <h3 className="font-bold text-lg mb-2">Véhicules Récents</h3>
+              <p className="text-gray-600 text-sm">Flotte moderne et bien entretenue</p>
+            </div>
+
+            <div className="text-center">
+              <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-4 mx-auto">
+                <span className="text-2xl font-bold" style={{ color: 'rgb(223, 0, 28)' }}>🛡</span>
+              </div>
+              <h3 className="font-bold text-lg mb-2">Sécurité Maximale</h3>
+              <p className="text-gray-600 text-sm">Équipements de sécurité et bâchage</p>
+            </div>
+
+            <div className="text-center">
+              <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-4 mx-auto">
+                <span className="text-2xl font-bold" style={{ color: 'rgb(223, 0, 28)' }}>📱</span>
+              </div>
+              <h3 className="font-bold text-lg mb-2">Suivi GPS</h3>
+              <p className="text-gray-600 text-sm">Localisation en temps réel</p>
+            </div>
+
+            <div className="text-center">
+              <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-4 mx-auto">
+                <span className="text-2xl font-bold" style={{ color: 'rgb(223, 0, 28)' }}>👨‍💼</span>
+              </div>
+              <h3 className="font-bold text-lg mb-2">Chauffeurs Expérimentés</h3>
+              <p className="text-gray-600 text-sm">Personnel qualifié et formé</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default FreightVehiclesPage;
