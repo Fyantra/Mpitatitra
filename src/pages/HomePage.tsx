@@ -118,7 +118,7 @@ const HomePage = ({ onNavigate }: HomePageProps = {}) => {
             <h2 className="text-3xl font-bold text-gray-800 mb-6">Qui sommes-nous ?</h2>
             <div className="max-w-4xl mx-auto">
               <p className="text-xl text-gray-600 leading-relaxed mb-6">
-                <strong style={{ color: 'rgb(223, 0, 28)' }}>MPITATITRA</strong>, une entreprise spécialisée dans le transport routier et la logistique à Madagascar.
+                <strong style={{ color: 'rgb(223, 0, 28)' }}>MPITATITRA</strong> est une entreprise spécialisée dans le transport routier et la logistique à Madagascar.
               </p>
               <p className="text-lg text-gray-600 leading-relaxed mb-4">
                 Depuis notre création, nous nous engageons à offrir des solutions de transport fiables, sécurisées et adaptées aux besoins spécifiques de nos clients. Notre expertise couvre l'ensemble du territoire malgache, des zones urbaines aux régions les plus reculées.
