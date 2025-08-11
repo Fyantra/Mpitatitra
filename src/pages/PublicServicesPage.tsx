@@ -5,26 +5,32 @@ const PublicServicesPage = () => {
     {
       icon: Users,
       title: 'Transport VIP Événements',
-      description: 'Service premium pour vos événements d\'entreprise et réceptions officielles.',
-      features: ['Véhicules de prestige', 'Chauffeurs en tenue', 'Ponctualité garantie', 'Service personnalisé']
+      description: 'Service premium pour vos événements d\'entreprise et réceptions officielles.'
     },
     {
       icon: Calendar,
       title: 'Excursions Touristiques Premium',
-      description: 'Découvrez Madagascar avec confort et style grâce à nos circuits sur mesure.',
-      features: ['Guides expérimentés', 'Itinéraires personnalisés', 'Véhicules climatisés', 'Assistance complète']
+      description: 'Découvrez Madagascar avec confort et style grâce à nos circuits sur mesure.'
     },
     {
       icon: MapPin,
       title: 'Transfert Aéroport',
-      description: 'Service de navette premium entre l\'aéroport et votre destination.',
-      features: ['Accueil personnalisé', 'Suivi des vols', 'Véhicules confortables', 'Service 24h/24']
+      description: 'Service de navette premium entre l\'aéroport et votre destination.'
     },
     {
       icon: Shield,
       title: 'Location avec Chauffeur Privé',
-      description: 'Mise à disposition de véhicule avec chauffeur pour vos déplacements.',
-      features: ['Chauffeurs qualifiés', 'Disponibilité flexible', 'Véhicules premium', 'Confidentialité assurée']
+      description: 'Mise à disposition de véhicule avec chauffeur pour vos déplacements.'
+    },
+    {
+      icon: Users,
+      title: 'Navettes VIP pour événements d\'entreprise',
+      description: 'Transport haut de gamme pour vos événements professionnels et réceptions.'
+    },
+    {
+      icon: Calendar,
+      title: 'Congrès, séminaires, mariages haut de gamme',
+      description: 'Solutions de transport élégantes pour vos événements les plus importants.'
     }
   ];
 
@@ -50,22 +56,14 @@ const PublicServicesPage = () => {
             <p className="text-lg text-gray-600">Excellence et professionnalisme pour tous vos déplacements</p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
               <div key={index} className="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:-translate-y-2">
                 <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-6">
                   <service.icon className="w-8 h-8" style={{ color: 'rgb(223, 0, 28)' }} />
                 </div>
                 <h3 className="text-xl font-bold mb-4">{service.title}</h3>
-                <p className="text-gray-600 mb-6">{service.description}</p>
-                <ul className="space-y-2">
-                  {service.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-center text-sm text-gray-600">
-                      <span className="w-2 h-2 bg-red-600 rounded-full mr-3" style={{ backgroundColor: 'rgb(223, 0, 28)' }}></span>
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
+                <p className="text-gray-600">{service.description}</p>
               </div>
             ))}
           </div>

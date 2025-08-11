@@ -153,12 +153,6 @@ const HomePage = ({ onNavigate }: HomePageProps = {}) => {
               <p className="text-gray-600 text-center mb-6">
                 Déménagement, expédition, transbordement avec une flotte adaptée de 2 à 32 tonnes.
               </p>
-              <ul className="space-y-2 text-gray-600 mb-6">
-                <li>• Déménagement entrepôt/particulier</li>
-                <li>• Expédition sécurisée</li>
-                <li>• Transbordement</li>
-                <li>• Véhicules spécialisés disponibles</li>
-              </ul>
               <div className="flex flex-col sm:flex-row gap-3 justify-center">
                 <button 
                   onClick={() => onNavigate?.('transport-marchandises-services')}
@@ -185,12 +179,6 @@ const HomePage = ({ onNavigate }: HomePageProps = {}) => {
               <p className="text-gray-600 text-center mb-6">
                 Services VIP pour événements, excursions touristiques et déplacements officiels.
               </p>
-              <ul className="space-y-2 text-gray-600 mb-6">
-                <li>• Navettes VIP événements</li>
-                <li>• Excursions touristiques premium</li>
-                <li>• Transfert aéroport</li>
-                <li>• Location avec chauffeur privé</li>
-              </ul>
               <div className="flex flex-col sm:flex-row gap-3 justify-center">
                 <button 
                   onClick={() => onNavigate?.('transport-public-services')}

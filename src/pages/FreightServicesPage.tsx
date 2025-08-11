@@ -6,31 +6,31 @@ const FreightServicesPage = () => {
       icon: Home,
       title: 'Déménagement Entrepôt / Particulier',
       description: 'Service complet de déménagement avec emballage, transport et déballage sécurisés.',
-      features: ['Emballage professionnel', 'Transport sécurisé', 'Déballage et installation', 'Assurance complète']
+      image: 'https://images.pexels.com/photos/6169668/pexels-photo-6169668.jpeg?auto=compress&cs=tinysrgb&w=600'
     },
     {
       icon: ArrowRightLeft,
       title: 'Déplacement',
       description: 'Solutions flexibles pour tous vos besoins de déplacement de marchandises.',
-      features: ['Planification optimisée', 'Suivi en temps réel', 'Équipe spécialisée', 'Délais respectés']
+      image: 'https://images.pexels.com/photos/586020/pexels-photo-586020.jpeg?auto=compress&cs=tinysrgb&w=600'
     },
     {
       icon: Building,
       title: 'Animation',
       description: 'Transport spécialisé pour équipements d\'animation et événementiel.',
-      features: ['Matériel délicat', 'Installation sur site', 'Personnel qualifié', 'Support technique']
+      image: 'https://images.pexels.com/photos/6169643/pexels-photo-6169643.jpeg?auto=compress&cs=tinysrgb&w=600'
     },
     {
       icon: Plane,
       title: 'Expédition',
       description: 'Service d\'expédition rapide et sécurisé vers toutes destinations.',
-      features: ['Livraison express', 'Suivi détaillé', 'Emballage adapté', 'Garantie de livraison']
+      image: 'https://images.pexels.com/photos/4481259/pexels-photo-4481259.jpeg?auto=compress&cs=tinysrgb&w=600'
     },
     {
       icon: ArrowRightLeft,
       title: 'Transbordement',
       description: 'Transfert efficace de marchandises entre différents moyens de transport.',
-      features: ['Coordination optimale', 'Réduction des délais', 'Sécurité maximale', 'Coûts optimisés']
+      image: 'https://images.pexels.com/photos/4481942/pexels-photo-4481942.jpeg?auto=compress&cs=tinysrgb&w=600'
     }
   ];
 
@@ -58,20 +58,21 @@ const FreightServicesPage = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
-              <div key={index} className="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:-translate-y-2">
-                <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-6">
-                  <service.icon className="w-8 h-8" style={{ color: 'rgb(223, 0, 28)' }} />
+              <div key={index} className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:-translate-y-2 overflow-hidden">
+                <div className="h-48 overflow-hidden">
+                  <img 
+                    src={service.image} 
+                    alt={service.title}
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  />
                 </div>
-                <h3 className="text-xl font-bold mb-4">{service.title}</h3>
-                <p className="text-gray-600 mb-6">{service.description}</p>
-                <ul className="space-y-2">
-                  {service.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-center text-sm text-gray-600">
-                      <span className="w-2 h-2 bg-red-600 rounded-full mr-3" style={{ backgroundColor: 'rgb(223, 0, 28)' }}></span>
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
+                <div className="p-6">
+                  <div className="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center mb-4">
+                    <service.icon className="w-6 h-6" style={{ color: 'rgb(223, 0, 28)' }} />
+                  </div>
+                  <h3 className="text-xl font-bold mb-3">{service.title}</h3>
+                  <p className="text-gray-600">{service.description}</p>
+                </div>
               </div>
             ))}
           </div>
