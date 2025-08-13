@@ -6,13 +6,22 @@ const Header = () => {
     <header className="bg-black text-white py-4 px-6">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Logo */}
-        <div className="flex items-center space-x-3">
-          <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center">
-            <span className="text-black font-bold text-xl">M</span>
-          </div>
-          <div>
-            <h1 className="text-2xl font-bold text-white">MPITATITRA</h1>
-            <p className="text-sm text-gray-300">Transport & Logistique</p>
+        <div className="flex items-center">
+          <div className="relative group">
+            {/* Effet de glow subtil en arrière-plan */}
+            <div className="absolute -inset-1 bg-gradient-to-r from-red-500/10 via-red-600/10 to-red-700/10 rounded-lg blur-sm group-hover:blur-md opacity-50 group-hover:opacity-75 transition-all duration-300" style={{ background: 'linear-gradient(45deg, rgba(223, 0, 28, 0.1), rgba(223, 0, 28, 0.15), rgba(223, 0, 28, 0.1))' }}></div>
+            
+            {/* Logo avec effet de contraste pour la visibilité */}
+            <div className="relative">
+              <img 
+                src="/lovable-uploads/730b2c6e-ca3e-452f-923e-dacfb42650c5.png" 
+                alt="MPITATITRA Logo" 
+                className="h-12 w-auto transition-all duration-300 group-hover:scale-105 drop-shadow-lg"
+                style={{ 
+                  filter: 'drop-shadow(0 0 8px rgba(255, 255, 255, 0.8)) drop-shadow(0 0 4px rgba(0, 0, 0, 0.3))'
+                }}
+              />
+            </div>
           </div>
         </div>
 
