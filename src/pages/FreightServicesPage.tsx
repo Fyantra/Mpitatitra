@@ -1,4 +1,5 @@
 import { Truck, ArrowRightLeft, Plane, Home, Building } from 'lucide-react';
+import { Package, Settings } from 'lucide-react';
 
 const FreightServicesPage = () => {
   const services = [
@@ -30,6 +31,18 @@ const FreightServicesPage = () => {
       icon: ArrowRightLeft,
       title: 'Transbordement',
       description: 'Transfert efficace de marchandises entre différents moyens de transport.',
+      image: 'https://images.pexels.com/photos/4481942/pexels-photo-4481942.jpeg?auto=compress&cs=tinysrgb&w=600'
+    },
+    {
+      icon: Settings,
+      title: 'Montage et Démontage Meuble',
+      description: 'Service professionnel de montage et démontage de mobilier.',
+      image: 'https://images.pexels.com/photos/6169668/pexels-photo-6169668.jpeg?auto=compress&cs=tinysrgb&w=600'
+    },
+    {
+      icon: Package,
+      title: 'Service de Manutention et Emballage',
+      description: 'Solutions complètes de manutention et emballage sécurisé.',
       image: 'https://images.pexels.com/photos/4481942/pexels-photo-4481942.jpeg?auto=compress&cs=tinysrgb&w=600'
     }
   ];

@@ -1,4 +1,4 @@
-import { Users, Calendar, MapPin, Shield } from 'lucide-react';
+import { Users, Calendar, Plane, Shield, Camera, Heart } from 'lucide-react';
 
 const PublicServicesPage = () => {
   const services = [
@@ -13,7 +13,7 @@ const PublicServicesPage = () => {
       description: 'Découvrez Madagascar avec confort et style grâce à nos circuits sur mesure.'
     },
     {
-      icon: MapPin,
+      icon: Plane,
       title: 'Transfert Aéroport',
       description: 'Service de navette premium entre l\'aéroport et votre destination.'
     },
@@ -28,7 +28,7 @@ const PublicServicesPage = () => {
       description: 'Transport haut de gamme pour vos événements professionnels et réceptions.'
     },
     {
-      icon: Calendar,
+      icon: Heart,
       title: 'Congrès, séminaires, mariages haut de gamme',
       description: 'Solutions de transport élégantes pour vos événements les plus importants.'
     }

@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { ChevronLeft, ChevronRight, Truck, Users } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Truck, Users, Phone, Mail, MapPin } from 'lucide-react';
 
 interface HomePageProps {
   onNavigate?: (page: string) => void;
@@ -240,6 +240,34 @@ const HomePage = ({ onNavigate }: HomePageProps = {}) => {
               <h3 className="text-xl font-bold mb-4">Suivi Personnalisé</h3>
               <p className="text-gray-600">Service client dédié et suivi en temps réel</p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Call to Action */}
+      <section className="py-16 bg-white">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <h2 className="text-3xl font-bold text-gray-800 mb-6">Prêt à démarrer votre projet ?</h2>
+          <p className="text-lg text-gray-600 mb-8">
+            Contactez-nous dès aujourd'hui pour discuter de vos besoins en transport et obtenir un devis personnalisé.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a 
+              href="tel:+261341234567" 
+              className="inline-flex items-center justify-center px-8 py-4 bg-red-600 text-white font-semibold rounded-lg hover:bg-red-700 transition-colors"
+              style={{ backgroundColor: 'rgb(223, 0, 28)' }}
+            >
+              <Phone className="w-5 h-5 mr-2" />
+              Appeler maintenant
+            </a>
+            <a 
+              href="mailto:contact@mpitatitra.mg" 
+              className="inline-flex items-center justify-center px-8 py-4 border-2 border-red-600 text-red-600 font-semibold rounded-lg hover:bg-red-50 transition-colors"
+              style={{ borderColor: 'rgb(223, 0, 28)', color: 'rgb(223, 0, 28)' }}
+            >
+              <Mail className="w-5 h-5 mr-2" />
+              Envoyer un email
+            </a>
           </div>
         </div>
       </section>

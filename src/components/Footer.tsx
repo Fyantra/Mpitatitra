@@ -7,14 +7,12 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <div className="flex items-center space-x-3 mb-6">
-              <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center">
-                <span className="text-black font-bold text-xl">M</span>
-              </div>
-              <div>
-                <h3 className="text-2xl font-bold">MPITATITRA</h3>
-                <p className="text-sm text-gray-300">Transport & Logistique</p>
-              </div>
+            <div className="mb-6">
+            <img 
+              src="/lovable-uploads/c69cb77b-1904-40f5-abb2-632b457ee97d.png" 
+              alt="MPITATITRA Logo" 
+              className="h-16 sm:h-20 md:h-28 w-auto brightness-0 invert"
+            />
             </div>
             <p className="text-gray-300 text-sm leading-relaxed font-medium" style={{ color: 'rgb(223, 0, 28)' }}>
               "Votre destination, notre mission"

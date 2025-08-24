@@ -58,49 +58,6 @@ const FreightVehiclesPage = () => {
         </div>
       </section>
 
-      {/* Features Section */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">Caractéristiques de Notre Flotte</h2>
-            <p className="text-lg text-gray-600">Véhicules modernes et sécurisés</p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="text-center">
-              <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-4 mx-auto">
-                <span className="text-2xl font-bold" style={{ color: 'rgb(223, 0, 28)' }}>✓</span>
-              </div>
-              <h3 className="font-bold text-lg mb-2">Véhicules Récents</h3>
-              <p className="text-gray-600 text-sm">Flotte moderne et bien entretenue</p>
-            </div>
-
-            <div className="text-center">
-              <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-4 mx-auto">
-                <span className="text-2xl font-bold" style={{ color: 'rgb(223, 0, 28)' }}>🛡</span>
-              </div>
-              <h3 className="font-bold text-lg mb-2">Sécurité Maximale</h3>
-              <p className="text-gray-600 text-sm">Équipements de sécurité et bâchage</p>
-            </div>
-
-            <div className="text-center">
-              <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-4 mx-auto">
-                <span className="text-2xl font-bold" style={{ color: 'rgb(223, 0, 28)' }}>📱</span>
-              </div>
-              <h3 className="font-bold text-lg mb-2">Suivi GPS</h3>
-              <p className="text-gray-600 text-sm">Localisation en temps réel</p>
-            </div>
-
-            <div className="text-center">
-              <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-4 mx-auto">
-                <span className="text-2xl font-bold" style={{ color: 'rgb(223, 0, 28)' }}>👨‍💼</span>
-              </div>
-              <h3 className="font-bold text-lg mb-2">Chauffeurs Expérimentés</h3>
-              <p className="text-gray-600 text-sm">Personnel qualifié et formé</p>
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
   );
 };

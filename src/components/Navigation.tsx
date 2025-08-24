@@ -30,7 +30,8 @@ const Navigation: React.FC<NavigationProps> = ({ currentPage, setCurrentPage }) 
         { id: 'transport-public-services', label: 'NOS SERVICES' },
         { id: 'transport-public-vehicules', label: 'VEHICULES DISPONIBLES' }
       ]
-    }
+    },
+    { id: 'contact', label: 'CONTACT' }
   ];
 
   const getCurrentPageTitle = () => {
@@ -50,15 +51,23 @@ const Navigation: React.FC<NavigationProps> = ({ currentPage, setCurrentPage }) 
 
   return (
     <nav className="bg-white shadow-lg sticky top-0 z-50">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="flex justify-between lg:justify-center items-center">
+      <div className="max-w-9xl mx-5 px-6">
+        <div className="flex justify-between lg:justify-start items-center">
+          {/* Logo à gauche */}
+          <div className="flex items-center">
+          <img 
+            src="/lovable-uploads/logo_mpitatitra.png" 
+            alt="MPITATITRA Logo" 
+            className="h-14 sm:h-16 md:h-20 mb-1 w-auto mr-3"
+          />
+          </div>
           {/* Titre de page mobile */}
           <div className="lg:hidden flex items-center space-x-2">
             <span className="font-bold text-lg text-gray-800">{getCurrentPageTitle()}</span>
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden lg:flex space-x-8">
+          <div className="hidden lg:flex space-x-8 flex-1 justify-center">
             {menuItems.map((item) => (
               <div key={item.id} className="relative group">
                 {item.hasDropdown ? (

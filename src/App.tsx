@@ -10,6 +10,7 @@ import FreightServicesPage from './pages/FreightServicesPage';
 import FreightVehiclesPage from './pages/FreightVehiclesPage';
 import PublicServicesPage from './pages/PublicServicesPage';
 import PublicVehiclesPage from './pages/PublicVehiclesPage';
+import ContactPage from './pages/ContactPage';
 import Footer from './components/Footer';
 
 function App() {
@@ -31,7 +32,7 @@ function App() {
       case 'accueil':
         return <HomePage />;
       case 'qui-sommes-nous':
-        return <AboutPage />;
+        return <AboutPage onNavigate={handlePageChange} />;
       case 'transport-marchandises':
         return <FreightTransportPage />;
       case 'transport-marchandises-services':
@@ -46,6 +47,8 @@ function App() {
         return <PublicVehiclesPage />;
       case 'service-manutention':
         return <HandlingPackagingPage />;
+      case 'contact':
+        return <ContactPage />;
       default:
         return <HomePage />;
     }
