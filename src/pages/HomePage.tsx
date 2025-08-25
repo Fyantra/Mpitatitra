@@ -11,7 +11,7 @@ const HomePage = ({ onNavigate }: HomePageProps = {}) => {
   const slides = [
     {
       id: 1,
-      image: 'https://images.pexels.com/photos/1756957/pexels-photo-1756957.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop',
+      image: 'accueil/la-mutualisation-transport-service-transporteurs-1.jpg',
       title: 'MPITATITRA',
       subtitle: 'Entreprise spécialisée dans le transport routier à Madagascar',
       slogan: 'Transport l\'essentiel, livrer l\'excellence',
