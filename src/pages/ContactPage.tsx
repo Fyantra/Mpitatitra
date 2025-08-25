@@ -56,7 +56,7 @@ const ContactPage = () => {
               </div>
               <h3 className="text-2xl font-bold mb-6" style={{ color: 'rgb(223, 0, 28)' }}>Horaires d'ouverture</h3>
               <p className="text-gray-800 font-semibold mb-1">Lundi - Vendredi: 7h - 18h</p>
-              <p className="text-gray-800 font-semibold mb-1">Samedi: 8h - 16h</p>
+              <p className="text-gray-800 font-semibold mb-1">Samedi: 8h - 12h</p>
               <p className="text-gray-600">Dimanche: Fermé</p>
             </div>
           </div>

@@ -95,7 +95,7 @@ const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
               <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-6 mx-auto">
                 <Target className="w-8 h-8" style={{ color: 'rgb(223, 0, 28)' }} />
               </div>
-              <h3 className="font-bold text-xl mb-4 text-center">Développer le Transport</h3>
+              <h3 className="font-bold text-xl mb-4 text-center">Faciliter les déplacements</h3>
               <p className="text-gray-600 text-center leading-relaxed">
                 Moderniser et étendre les services de transport routier à Madagascar pour répondre aux besoins croissants 
                 des entreprises et des particuliers dans toutes les régions.
@@ -195,32 +195,59 @@ const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 relative">
-            <div className="absolute inset-0 bg-cover bg-center bg-no-repeat rounded-xl opacity-20" 
-                 style={{ backgroundImage: 'url(https://images.pexels.com/photos/2132126/pexels-photo-2132126.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop)', backgroundSize: 'cover' }}>
-            </div>
-            <div className="text-center p-6 bg-white rounded-xl shadow-md">
+            <div className="text-center p-6 bg-white rounded-xl shadow-md relative overflow-hidden">
+                <div className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20" 
+                     style={{ backgroundImage: 'url(https://images.pexels.com/photos/2132126/pexels-photo-2132126.jpeg?auto=compress&cs=tinysrgb&w=600)', backgroundSize: 'cover' }}>
+                </div>
+                <div className="relative z-10">
                 <h3 className="text-xl font-bold mb-2" style={{ color: 'rgb(223, 0, 28)' }}>Antananarivo</h3>
                 <p className="text-gray-600">Capitale et région centrale</p>
+                </div>
             </div>
-            <div className="text-center p-6 bg-white rounded-xl shadow-md">
+            <div className="text-center p-6 bg-white rounded-xl shadow-md relative overflow-hidden">
+                <div className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20" 
+                     style={{ backgroundImage: 'url(https://images.pexels.com/photos/1001682/pexels-photo-1001682.jpeg?auto=compress&cs=tinysrgb&w=600)', backgroundSize: 'cover' }}>
+                </div>
+                <div className="relative z-10">
                 <h3 className="text-xl font-bold mb-2" style={{ color: 'rgb(223, 0, 28)' }}>Toamasina</h3>
                 <p className="text-gray-600">Port principal de l'île</p>
+                </div>
             </div>
-            <div className="text-center p-6 bg-white rounded-xl shadow-md">
+            <div className="text-center p-6 bg-white rounded-xl shadow-md relative overflow-hidden">
+                <div className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20" 
+                     style={{ backgroundImage: 'url(https://images.pexels.com/photos/2132126/pexels-photo-2132126.jpeg?auto=compress&cs=tinysrgb&w=600)', backgroundSize: 'cover' }}>
+                </div>
+                <div className="relative z-10">
                 <h3 className="text-xl font-bold mb-2" style={{ color: 'rgb(223, 0, 28)' }}>Antsirabe</h3>
                 <p className="text-gray-600">Région des hauts plateaux</p>
+                </div>
             </div>
-            <div className="text-center p-6 bg-white rounded-xl shadow-md">
+            <div className="text-center p-6 bg-white rounded-xl shadow-md relative overflow-hidden">
+                <div className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20" 
+                     style={{ backgroundImage: 'url(https://images.pexels.com/photos/2132126/pexels-photo-2132126.jpeg?auto=compress&cs=tinysrgb&w=600)', backgroundSize: 'cover' }}>
+                </div>
+                <div className="relative z-10">
                 <h3 className="text-xl font-bold mb-2" style={{ color: 'rgb(223, 0, 28)' }}>Fianarantsoa</h3>
                 <p className="text-gray-600">Région sud des hauts plateaux</p>
+                </div>
             </div>
-            <div className="text-center p-6 bg-white rounded-xl shadow-md">
+            <div className="text-center p-6 bg-white rounded-xl shadow-md relative overflow-hidden">
+                <div className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20" 
+                     style={{ backgroundImage: 'url(https://images.pexels.com/photos/2132126/pexels-photo-2132126.jpeg?auto=compress&cs=tinysrgb&w=600)', backgroundSize: 'cover' }}>
+                </div>
+                <div className="relative z-10">
                 <h3 className="text-xl font-bold mb-2" style={{ color: 'rgb(223, 0, 28)' }}>Majunga</h3>
                 <p className="text-gray-600">Région côtière ouest</p>
+                </div>
             </div>
-            <div className="text-center p-6 bg-white rounded-xl shadow-md">
+            <div className="text-center p-6 bg-white rounded-xl shadow-md relative overflow-hidden">
+                <div className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20" 
+                     style={{ backgroundImage: 'url(https://images.pexels.com/photos/2132126/pexels-photo-2132126.jpeg?auto=compress&cs=tinysrgb&w=600)', backgroundSize: 'cover' }}>
+                </div>
+                <div className="relative z-10">
                 <h3 className="text-xl font-bold mb-2" style={{ color: 'rgb(223, 0, 28)' }}>Nosy Be Hell Ville</h3>
                 <p className="text-gray-600">Île touristique du nord-ouest</p>
+                </div>
             </div>
           </div>
         </div>

@@ -1,4 +1,4 @@
-import { Truck, ArrowRightLeft, Plane, Home, Building } from 'lucide-react';
+import { Truck, ArrowRightLeft, Plane, Home, Building, Wrench } from 'lucide-react';
 import { Package, Settings } from 'lucide-react';
 
 const FreightServicesPage = () => {
@@ -7,7 +7,7 @@ const FreightServicesPage = () => {
       icon: Home,
       title: 'Déménagement Entrepôt / Particulier',
       description: 'Service complet de déménagement avec emballage, transport et déballage sécurisés.',
-      image: 'https://images.pexels.com/photos/6169668/pexels-photo-6169668.jpeg?auto=compress&cs=tinysrgb&w=600'
+      image: 'marchandiseService/images (7).jpg'
     },
     {
       icon: ArrowRightLeft,
@@ -25,7 +25,7 @@ const FreightServicesPage = () => {
       icon: Plane,
       title: 'Expédition',
       description: 'Service d\'expédition rapide et sécurisé vers toutes destinations.',
-      image: 'https://images.pexels.com/photos/4481259/pexels-photo-4481259.jpeg?auto=compress&cs=tinysrgb&w=600'
+      image: 'marchandiseService/12599-transport-routier-des-limites-a-ne-pas-depasser.jpg'
     },
     {
       icon: ArrowRightLeft,
@@ -43,6 +43,12 @@ const FreightServicesPage = () => {
       icon: Package,
       title: 'Service de Manutention et Emballage',
       description: 'Solutions complètes de manutention et emballage sécurisé.',
+      image: 'https://images.pexels.com/photos/4481942/pexels-photo-4481942.jpeg?auto=compress&cs=tinysrgb&w=600'
+    },
+    {
+      icon: Wrench,
+      title: 'Dépannage',
+      description: 'Service de dépannage routier et assistance technique 24h/24.',
       image: 'https://images.pexels.com/photos/4481942/pexels-photo-4481942.jpeg?auto=compress&cs=tinysrgb&w=600'
     }
   ];

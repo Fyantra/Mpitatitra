@@ -11,7 +11,7 @@ const HomePage = ({ onNavigate }: HomePageProps = {}) => {
   const slides = [
     {
       id: 1,
-      image: 'accueil/la-mutualisation-transport-service-transporteurs-1.jpg',
+      image: 'https://images.pexels.com/photos/1112598/pexels-photo-1112598.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop',
       title: 'MPITATITRA',
       subtitle: 'Entreprise spécialisée dans le transport routier à Madagascar',
       slogan: 'Transport l\'essentiel, livrer l\'excellence',
@@ -19,7 +19,7 @@ const HomePage = ({ onNavigate }: HomePageProps = {}) => {
     },
     {
       id: 2,
-      image: 'https://images.pexels.com/photos/1112598/pexels-photo-1112598.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop',
+      image: 'accueil/la-mutualisation-transport-service-transporteurs-1.jpg',
       title: 'Nos Services',
       subtitle: 'Solutions complètes de transport et logistique',
       slogan: 'Fiabilité et professionnalisme garantis',
@@ -27,11 +27,11 @@ const HomePage = ({ onNavigate }: HomePageProps = {}) => {
     },
     {
       id: 3,
-      image: 'https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop',
+      image: 'accueil/accueil-public.png',
       title: 'Véhicules Modernes',
       subtitle: 'Flotte diversifiée pour tous vos besoins',
       slogan: 'Sécurité et confort assurés',
-      overlay: 'bg-green-900/50'
+      overlay: 'bg-black/50'
     }
   ];
 

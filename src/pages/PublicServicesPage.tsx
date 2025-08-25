@@ -5,32 +5,38 @@ const PublicServicesPage = () => {
     {
       icon: Users,
       title: 'Transport VIP Événements',
-      description: 'Service premium pour vos événements d\'entreprise et réceptions officielles.'
+      description: 'Service premium pour vos événements d\'entreprise et réceptions officielles.',
+      image: 'https://images.pexels.com/photos/1181396/pexels-photo-1181396.jpeg?auto=compress&cs=tinysrgb&w=600'
     },
     {
       icon: Calendar,
       title: 'Excursions Touristiques Premium',
-      description: 'Découvrez Madagascar avec confort et style grâce à nos circuits sur mesure.'
+      description: 'Découvrez Madagascar avec confort et style grâce à nos circuits sur mesure.',
+      image: 'https://images.pexels.com/photos/2132126/pexels-photo-2132126.jpeg?auto=compress&cs=tinysrgb&w=600'
     },
     {
       icon: Plane,
       title: 'Transfert Aéroport',
-      description: 'Service de navette premium entre l\'aéroport et votre destination.'
+      description: 'Service de navette premium entre l\'aéroport et votre destination.',
+      image: 'https://images.pexels.com/photos/2132126/pexels-photo-2132126.jpeg?auto=compress&cs=tinysrgb&w=600'
     },
     {
       icon: Shield,
       title: 'Location avec Chauffeur Privé',
-      description: 'Mise à disposition de véhicule avec chauffeur pour vos déplacements.'
+      description: 'Mise à disposition de véhicule avec chauffeur pour vos déplacements.',
+      image: 'https://images.pexels.com/photos/1112598/pexels-photo-1112598.jpeg?auto=compress&cs=tinysrgb&w=600'
     },
     {
       icon: Users,
       title: 'Navettes VIP pour événements d\'entreprise',
-      description: 'Transport haut de gamme pour vos événements professionnels et réceptions.'
+      description: 'Transport haut de gamme pour vos événements professionnels et réceptions.',
+      image: 'https://images.pexels.com/photos/1181396/pexels-photo-1181396.jpeg?auto=compress&cs=tinysrgb&w=600'
     },
     {
       icon: Heart,
       title: 'Congrès, séminaires, mariages haut de gamme',
-      description: 'Solutions de transport élégantes pour vos événements les plus importants.'
+      description: 'Solutions de transport élégantes pour vos événements les plus importants.',
+      image: 'https://images.pexels.com/photos/1181396/pexels-photo-1181396.jpeg?auto=compress&cs=tinysrgb&w=600'
     }
   ];
 
@@ -58,12 +64,21 @@ const PublicServicesPage = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
-              <div key={index} className="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:-translate-y-2">
+              <div key={index} className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:-translate-y-2 overflow-hidden">
+                <div className="h-48 overflow-hidden">
+                  <img 
+                    src={service.image} 
+                    alt={service.title}
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <div className="p-8">
                 <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-6">
                   <service.icon className="w-8 h-8" style={{ color: 'rgb(223, 0, 28)' }} />
                 </div>
                 <h3 className="text-xl font-bold mb-4">{service.title}</h3>
                 <p className="text-gray-600">{service.description}</p>
+                </div>
               </div>
             ))}
           </div>
